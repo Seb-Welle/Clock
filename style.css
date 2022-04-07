@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gold;
+}
+
+#analog {
+  position: relative;
+  width: 300px;
+}
+
+#bg-circle {
+  background-color: #fff;
+  width: 300px;
+  height: 300px;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+#pin {
+  background-color: black;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: 49%;
+  left: 46%;
+}
+
+#pointer-seconds {
+  width: 4px;
+  height: 40%;
+  background-color: black;
+  position: absolute;
+  top: 30%;
+  left: 46%;
+  transform: translateY(-50%) rotate(0deg);
+  transform-origin: 50% 100%;
+}
+
+#pointer-minutes {
+  width: 6px;
+  height: 35%;
+  background-color: black;
+  position: absolute;
+  top: 33%;
+  left: 46%;
+  transform: translateY(-50%) rotate(0deg);
+  transform-origin: 50% 100%;
+}
+
+#pointer-hours {
+  width: 8px;
+  height: 25%;
+  background-color: black;
+  position: absolute;
+  top: 38%;
+  left: 46%;
+  transform: translateY(-50%) rotate(0deg);
+  transform-origin: 50% 100%;
+}
+
+#digital {
+  margin-top: 1rem;
+}
